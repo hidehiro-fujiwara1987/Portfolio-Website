@@ -205,6 +205,10 @@ main,
   margin-top: 1rem;
 }
 
+.intro-text .statement {
+  margin-top: 1.75rem;
+}
+
 /* Hidden from view, still read by screen readers and search engines */
 .visually-hidden {
   position: absolute;
