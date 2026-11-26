@@ -176,12 +176,25 @@ main,
   margin-bottom: 1.5rem;
 }
 
-.intro p {
-  max-width: 36rem;
+/* small label above the headline */
+.kicker {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 1.25rem;
 }
 
-.intro p + p {
-  margin-top: 0.5rem;
+.intro-meta {
+  max-width: 36rem;
+  font-size: 0.9375rem;
+  color: var(--muted);
+}
+
+/* Japanese headline needs more line spacing */
+:lang(ja) .intro h1 {
+  line-height: 1.4;
+  letter-spacing: 0.02em;
 }
 
 /* ---------- Sections ---------- */
