@@ -122,9 +122,11 @@
         <article class="entry">
           <header class="entry-head">
             <h3>Wii Remote Controller</h3>
-            <span class="year">[YEAR]</span>
+            <span class="year">2026</span>
           </header>
-          <p>Wii リモコン、ESP32、Max 8 を組み合わせたワイヤレス・コントローラー。</p>
+          <p>M1 Mac では Wii リモコンの Bluetooth を直接認識できないため、ESP32 を中継して Wii リモコンのセンサーデータを Max に送るシステム。</p>
+          <p>ESP32 が Wii リモコンと Bluetooth で接続し、ボタン・3 軸加速度センサー・ヌンチャク（スティック・加速度・C / Z ボタン）の値を USB シリアルで Max に送信。Max 側の JavaScript で解析して、21 系統の値として取り出せます。</p>
+          <p>リモコンを振る・傾ける動きやボタン操作で演奏をコントロールでき、HIDE ACID HA-01 ではボイスの選択などに使っています。</p>
           <p class="tech">Max 8 / ESP32 / Wii Remote</p>
         </article>
 

@@ -138,9 +138,11 @@
         <article class="entry">
           <header class="entry-head">
             <h3>Wii Remote Controller</h3>
-            <span class="year">[YEAR]</span>
+            <span class="year">2026</span>
           </header>
-          <p>A wireless controller using Wii Remote, ESP32, and Max 8.</p>
+          <p>An M1 Mac can't see a Wii Remote over Bluetooth, so an ESP32 sits in between and relays the Wii Remote's sensor data to Max.</p>
+          <p>The ESP32 pairs with the Wii Remote over Bluetooth and sends the buttons, the 3-axis accelerometer and the Nunchuk (stick, accelerometer, C / Z buttons) to Max over USB serial. A JavaScript parser in Max turns this into 21 separate control values.</p>
+          <p>Shaking, tilting and pressing buttons can drive a performance; in HIDE ACID HA-01 it is used for things like selecting voices.</p>
           <p class="tech">Max 8 / ESP32 / Wii Remote</p>
         </article>
 
