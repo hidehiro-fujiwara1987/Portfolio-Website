@@ -187,9 +187,11 @@ YouTube の URL `https://www.youtube.com/watch?v=XXXXXXXX` の `XXXXXXXX` 部分
 `style.css` の先頭 `:root { … }` で色・フォント・横幅を一括で変えられます。
 
 ```css
---fg: #000;        /* 文字色 */
---bg: #fff;        /* 背景色 */
+--fg: #fff;        /* 文字色（白） */
+--bg: #000;        /* 背景色（黒） */
+--muted: #aaa;     /* 年号・技術名などの薄い文字 */
+--line: #fff;      /* 区切り線 */
 --max: 52rem;      /* コンテンツの最大幅 */
 ```
 
-OS がダークモードの場合は自動で白黒反転します。不要なら `@media (prefers-color-scheme: dark) { … }` のブロックを削除してください。
+サイトは常に黒背景・白文字です（OS のライト／ダーク設定には関係なく同じ表示）。
